@@ -1,0 +1,7 @@
+- name: installing horizon 
+  apt:
+     name: 
+          - openstack-dashboard
+     state: latest
+     update_cache: yes
+  when: ansible_distribution == "Ubuntu"
